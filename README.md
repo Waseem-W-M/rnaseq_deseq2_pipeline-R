@@ -1,10 +1,10 @@
 # RNA-Seq Differential Gene Expression Pipeline (DESeq2)
 
-An automated, reproducible R pipeline for **RNA-Seq Differential Gene Expression (DGE)** analysis using Bioconductor's `DESeq2`. This workflow covers count matrix simulation, quality control, statistical testing, and publication-quality visualizations.
+An automated, reproducible R pipeline for **RNA-Seq Differential Gene Expression (DGE)** analysis using Bioconductor's `DESeq2`. This workflow covers count matrix simulation, quality control, statistical testing, and publication quality visualizations.
 
 ## Pipeline Overview
-1. **Data Simulation & Preprocessing:** Generates a negative-binomial distributed RNA-Seq count matrix (1,000 genes across 3 Control and 3 Treated replicates) with planted upregulated and downregulated transcripts, followed by low-count filtering.
-2. **Statistical Modeling (`DESeq2`):** Performs size-factor normalization, empirical Bayes dispersion estimation, and Wald testing with Benjamini-Hochberg FDR correction.
+1. **Data Simulation & Preprocessing:** Generates a negative-binomial distributed RNA-Seq count matrix (1,000 genes across 3 Control and 3 Treated replicates) with planted upregulated and downregulated transcripts, followed by low count filtering.
+2. **Statistical Modeling (`DESeq2`):** Performs size factor normalization, empirical Bayes dispersion estimation, and Wald testing with Benjamini-Hochberg FDR correction.
 3. **Exploratory Quality Control:** Applies Variance Stabilizing Transformation (`VST`) and performs Principal Component Analysis (PCA) to verify sample clustering by biological condition.
 4. **Data Visualization:**
    - **PCA Plot:** Evaluates sample variance and batch separation.
